@@ -1,55 +1,179 @@
-{% extends "anthony_all_about_me/base.html" %}
-{% load tethys_gizmos %}
+{% extends "about_me_app/base.html" %}
+{% load staticfiles %}
 
 {% block header_buttons %}
-  <div class="header-button glyphicon-button" data-toggle="tooltip" data-placement="bottom" title="Help">
-    <a data-toggle="modal" data-target="#help-modal"><span class="glyphicon glyphicon-question-sign"></span></a>
-  </div>
+    <div class="header-button glyphicon-button" data-toggle="tooltip" data-placement="bottom" title="Help">
+        <a data-toggle="modal" data-target="#help-modal"><span class="glyphicon glyphicon-question-sign"></span></a>
+    </div>
 {% endblock %}
 
 {% block app_content %}
-  <h1>Anthony: All About Me</h1>
+
+    <h1>Anthony: All About Me</h1>
 
     <hr>
     <h5>Birthplace: Arequipa, Arequipa, Peru</h5>
     <hr>
 
     <p>Arequipa is such a great city. I think some of the best memories of my childhood happened here. I lived here until I was 8 years old. I remember always watching the Misti Volcano from my bedroom window and wishing to be closer. Hiking up there is still on my bucket list.</p>
+    <div id=image align="center"><img src="{% static 'anthony_all_about_me/images/arequipa_city.jpg' %}" alt="Arequipa City" style="width: 50%"> </div>
 
-    <div src="{% static 'anthony_all_about_me/public/images/arequipa_temple.JPG' %}" alt="Arequipa Landscape" style="width: 50%">
+    <br>
+    <p>This is the house where I grew up. It seemed so big for me when I was a kid.</p>
+    <div id=image align="center"><img src="{% static 'anthony_all_about_me/images/arequipa_childhood_house.JPG' %}" alt="Arequipa Childhood Home" style="width: 50%"> </div>
 
+    <br>
+    <p>This is the house where my father grew up. My uncles, aunts and cousins still live nearby. I remember that I was in this house when an earthquake happened on Jun 23rd, 2001</p>
+    <div id=image align="center"><img src="{% static 'anthony_all_about_me/images/rosas_family_house.JPG' %}" alt="Arequipa Rosas House" style="width: 50%"> </div>
+
+    <br>
+    <p>I personally love the food from Arequipa, Peru. In the following image you can see from left to right: ocopa arequipena, rocoto relleno, chupe de camarones and adobo arequipeno</p>
+    <div id=image align="center"><img src="{% static 'anthony_all_about_me/images/arequipaFood1.jpg' %}" alt="Arequipa Food" style="width: 50%"> </div>
+    <div id=image align="center"><img src="{% static 'anthony_all_about_me/images/arequipaFood2.jpg' %}" alt="Arequipa Food" style="width: 50%"> </div>
+
+    <br>
+    <p>This is the Arequipa Peru LDS Temple, I would love to be there for the dedication in Nov 2019, but I will be in the middle of Fall Semester.</p>
+    <div id=image align="center"><img src="{% static 'anthony_all_about_me/images/arequipa_temple.JPG' %}" alt="Arequipa LDS Temple" style="width: 50%"> </div>
+
+    <hr>
+    <h5>Trujillo Peru Childhood</h5>
+    <hr>
+
+    <p>I moved to Trujillo when I was 8 years old because of my father's job. This was my house when I was living there.</p>
+    <div id=image align="center"><img src="{% static 'anthony_all_about_me/images/trujillo_house.jpg' %}" alt="Trujillo House" style="width: 50%"> </div>
+
+    <br>
+    <p>This is the Trujillo Peru LDS Temple. I was able to be in the dedication and currently it is my favorite temple.</p>
+    <div id=image align="center"><img src="{% static 'anthony_all_about_me/images/trujillo_temple.jpg' %}" alt="Trujillo Temple" style="width: 50%"> </div>
+
+    <hr>
+    <h5>Ica Peru Youth</h5>
+    <hr>
+
+    <p>I moved to Ica when I was 10 years old because of my father's job. This was my house when I was living there.</p>
+    <div id=image align="center"><img src="{% static 'anthony_all_about_me/images/ica_house.jpg' %}" alt="Ica House" style="width: 50%"> </div>
+
+    <br>
+    <p>In August 15th, 2007 at 6:42PM (Peruvian Time) I experienced an earthquake in this city. These are some images after the earthquake.</p>
+    <div id=image align="center"><img src="{% static 'anthony_all_about_me/images/earthquake_ica_1.jpg' %}" alt="Earthquake Pisco 1" style="width: 50%"> </div>
+    <div id=image align="center"><img src="{% static 'anthony_all_about_me/images/earthquake_ica_2.jpg' %}" alt="Earthquake Pisco 2" style="width: 50%"> </div>
+
+    <hr>
+    <h5>Lima Peru Youth</h5>
+    <hr>
+
+    <p>I moved to Lima when I was 14 years old and I finished my High School here.</p>
+    <div id=image align="center"><img src="{% static 'anthony_all_about_me/images/trilce_high_school.jpg' %}" alt="Lima High School" style="width: 50%"> </div>
+
+    <br>
+    <p>I lived with my family in Lima for 3 years in this house.</p>
+    <div id=image align="center"><img src="{% static 'anthony_all_about_me/images/lima_rosas_house.jpg' %}" alt="Lima House" style="width: 50%"> </div>
+
+    <br>
+    <p>I lived with my Grandparents in Lima for almost a year in this house because my family moved to a Chimbote in Northern Peru. These were good times.</p>
+    <div id=image align="center"><img src="{% static 'anthony_all_about_me/images/lima_grandparents_house.jpg' %}" alt="Lima Gramps House" style="width: 50%"> </div>
+
+    <br>
+    <p>I studied in the "Universidad Nacional de Ingenieria" for a semester before getting ready to go on a mission.</p>
+    <div id=image align="center"><img src="{% static 'anthony_all_about_me/images/uni.jpg' %}" alt="UNI" style="width: 50%"> </div>
+
+    <hr>
+    <h5>Chimbote Preparation for Mission</h5>
+    <hr>
+
+    <p>I moved to Chimbote with my parents before going on a mission to this house. </p>
+    <div id=image align="center"><img src="{% static 'anthony_all_about_me/images/bellamar_house.jpg' %}" alt="Bellamar House" style="width: 50%"> </div>
+
+    <br>
+    <p>I loved the food in Chimbote. This restaurant has such a great ceviche. If you visit this city anytime, you should definitely go and eat there.</p>
+    <div id=image align="center"><img src="{% static 'anthony_all_about_me/images/nachos_restaurant.JPG' %}" alt="Nachos" style="width: 50%"> </div>
+
+    <hr>
+    <h5>Mission for The Church of Jesus Christ of Latter-day Saints</h5>
+    <hr>
+
+    <p>
+        I was called to serve in the Argentina Posadas Mission. This mission was unique because it had 2 countries in its territory (Paraguay and Argentina).
+        In the paraguayan region they spoke guarani and spanish and it had such a hot  and rainy tropical weather.
+        It was hard to be a missionary there, but it was so worth it. I got to meet really good people and I loved the place.
+        The Argentinian region had the Iguazu falls inside the mission borders. I was able to go there once. It was awesome!!
+    </p>
+
+    <div id=image align="center"><img src="{% static 'anthony_all_about_me/images/argentina_posadas_mission_map.jpg' %}" alt="Posadas Mission Map" style="width: 50%"> </div>
+    <div id=image align="center"><img src="{% static 'anthony_all_about_me/images/anthony_mission.jpg' %}" alt="Anthony Mission " style="width: 50%"> </div>
+
+
+    <hr>
+    <h5>Life in Lima after my mission</h5>
+    <hr>
+
+    <p>I returned to Lima after my mission and started studying in the Pontific Catholic University of Peru for a year befoe transferring to BYU. </p>
+    <div id=image align="center"><img src="{% static 'anthony_all_about_me/images/pucp.jpg' %}" alt="PUCP" style="width: 50%"> </div>
+
+    <br>
+    <p>I lived in an apartment in this building by myself while studying in Lima. It was the first time that I lived alone. It was great!!!</p>
+    <div id=image align="center"><img src="{% static 'anthony_all_about_me/images/anthony_apartment.jpg' %}" alt="Anthony Apartment" style="width: 50%"> </div>
+
+<hr>
+    <h5>Family</h5>
+    <hr>
+
+    <p>
+        This is my family. The Rosas Rodriguez Family.
+    </p>
+    <br>
+    <p>In this first picture we went to Macchu Picchu like 3 months before I went on an LDS Mission. </p>
+
+    <div id=image align="center"><img src="{% static 'anthony_all_about_me/images/rosasFamily1.jpg' %}" alt="rosasFamily1" style="width: 50%"> </div>
+
+    <br>
+    <p>In this second picture you can see my family in Lima. Grandparents , uncles, aunts and cousins included. </p>
+
+    <div id=image align="center"><img src="{% static 'anthony_all_about_me/images/rosasFamily2.jpg' %}" alt="rosasFamily2" style="width: 50%"> </div>
+
+    <br>
+    <p>In this third picture you can see my family in Bountiful, Utah last christmas 2018. </p>
+
+    <div id=image align="center"><img src="{% static 'anthony_all_about_me/images/rosasFamily3.jpg' %}" alt="rosasFamily3" style="width: 50%"> </div>
+
+    <br>
+    <p>In this fourth and final picture you can see my family in front of temple Square. From left to right: Marggie, Dad (Antonio), Jaela, Mom (Fabiola), Jean and me. </p>
+
+    <div id=image align="center"><img src="{% static 'anthony_all_about_me/images/rosasFamily4.jpg' %}" alt="rosasFamily4" style="width: 50%"> </div>
 
 
 {% endblock %}
 
 {# Use the after_app_content block for modals #}
 {% block after_app_content %}
-  <!-- Example Modal -->
-  <div class="modal fade" id="help-modal" tabindex="-1" role="dialog" aria-labelledby="help-modal-label">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h5 class="modal-title" id="help-modal-label">Example Modal</h5>
+    <!-- Example Modal -->
+    <div class="modal fade" id="help-modal" tabindex="-1" role="dialog" aria-labelledby="help-modal-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title" id="help-modal-label">Example Modal</h5>
+                </div>
+                <div class="modal-body">
+                    <p>You can add custom buttons to the app header using the <code>header_buttons</code> block. Use
+                        anchor/link tags for the button and wrap it in a div with the class <code>header-button</code>.
+                        For buttons with the gliphyicons, add the <code>glyphicon-button</code> class as well.</p>
+                    <p>Ever have trouble using a modal in a Tethys app? Use the <code>after_app_content</code> block for
+                        modal content to allow them to function properly. See: <a
+                                href="https://getbootstrap.com/javascript/#modals">Bootstrap Modals</a></p>
+                    <p>Add tooltips to any element by adding the <code>data-toggle</code>, <code>data-placement</code>,
+                        and <code>title</code> attributes to the button. See: <a
+                                href="https://getbootstrap.com/javascript/#tooltips">Bootstrap Tooltips</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          <p>You can add custom buttons to the app header using the <code>header_buttons</code> block. Use anchor/link tags for the button and wrap it in a div with the class <code>header-button</code>. For buttons with the gliphyicons, add the <code>glyphicon-button</code> class as well.</p>
-          <p>Ever have trouble using a modal in a Tethys app? Use the <code>after_app_content</code> block for modal content to allow them to function properly. See: <a href="https://getbootstrap.com/javascript/#modals">Bootstrap Modals</a></p>
-          <p>Add tooltips to any element by adding the <code>data-toggle</code>, <code>data-placement</code>, and <code>title</code> attributes to the button. See: <a href="https://getbootstrap.com/javascript/#tooltips">Bootstrap Tooltips</a></p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
-        </div>
-      </div>
     </div>
-  </div>
 {% endblock %}
 
 {% block app_actions %}
-  {% gizmo save_button %}
-  {% gizmo edit_button %}
-  {% gizmo remove_button %}
-  {% gizmo previous_button %}
-  {% gizmo next_button %}
 {% endblock %}
