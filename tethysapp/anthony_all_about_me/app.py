@@ -11,7 +11,7 @@ class AnthonyAllAboutMe(TethysAppBase):
     icon = 'anthony_all_about_me/images/icon.gif'
     package = 'anthony_all_about_me'
     root_url = 'anthony-all-about-me'
-    color = '#2980b9'
+    color = '#a80306'
     description = 'Place a brief description of your app here.'
     tags = ''
     enable_feedback = False
